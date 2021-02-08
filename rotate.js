@@ -5,7 +5,7 @@
     rangeInput.oninput = wheelUpdate(rangeInput.value);
 
     function wheelUpdate(degrees) {
-        document.getElementById("range-value").innerText = rangeInput.value; //Update the visual value
+        document.getElementById("range-value").innerText = degrees; //Update the visual value
         document.getElementById("wheel").style.transform = `rotate(${degrees}deg)`;
     }
     
