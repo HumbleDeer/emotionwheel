@@ -9,7 +9,7 @@
         document.getElementById("wheel").style.transform = `rotate(${rangeInput.value}deg)`;
     }
     
-    document.getElementById("lucky-button").addEventListener("click", function() {
+    document.getElementById("feeling-lucky").addEventListener("click", function() {
         rangeInput = Math.random() * (max - min) + min;
         wheelUpdate();
     });
