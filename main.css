@@ -24,7 +24,6 @@ html {
     display: block;
     max-width: 100%;
     height: auto;
-    z-index: -1;
 }
 
 body{
@@ -37,7 +36,7 @@ body{
 
 .wheel {
     margin:auto;
-    height: 85vh;
+    max-height: 85vh;
 }
 
 #wrapper{
