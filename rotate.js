@@ -10,7 +10,7 @@
     }
     
     document.getElementById("feeling-lucky").addEventListener("click", function() {
-        rangeInput = Math.random() * (max - min) + min;
+        rangeInput = Math.random() * (180 - (-180)) + (-180);
         wheelUpdate();
     });
 })();
