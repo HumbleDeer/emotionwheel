@@ -6,7 +6,7 @@
     rangeInput.oninput = wheelUpdate;
 
     function wheelUpdate() {
-        rangeValue.innerText = rangeInput.value-10; //Update the visual value
+        rangeValue.innerText = rangeInput.value; //Update the visual value
         wheel.style.transform = `rotate(${rangeInput.value}deg)`;
     }
 })();
