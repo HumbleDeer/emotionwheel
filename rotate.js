@@ -2,14 +2,14 @@
 (function() {
     var rangeInput = document.getElementById("range-input");
     // Print the range value to the output
-    rangeInput.oninput = wheelUpdate(rangeInput.value);
+    rangeInput.oninput = wheelUpdate;
 
-    function wheelUpdate(degrees) {
-        document.getElementById("range-value").innerText = degrees; //Update the visual value
-        document.getElementById("wheel").style.transform = `rotate(${degrees}deg)`;
+    function wheelUpdate() {
+        document.getElementById("range-value").innerText = rangeInput.value; //Update the visual value
+        document.getElementById("wheel").style.transform = `rotate(${rangeInput.value}deg)`;
     }
-    
-    document.getElementById("feeling-lucky").addEventListener("click", function() {
-        wheelUpdate(Math.random() * (180 - (-180)) + (-180));
+    document.getElementById("lucky-button").addEventListener("click", function() {
+        rangeInput = Math.random() * (max - min) + min;
+        wheelUpdate();
     });
 })();
