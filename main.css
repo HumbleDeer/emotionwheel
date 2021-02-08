@@ -45,6 +45,16 @@ body{
     padding:20px;
 }
 
+.feeling-lucky{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    size:20px;
+    padding:8px;
+    border: none;
+    background-color: grey;
+}
+
 input {
     width: 100%;
     -webkit-appearance: none;
