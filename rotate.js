@@ -13,6 +13,6 @@
     }
     document.getElementById("feeling-lucky").addEventListener("click", function() {
         //wheelUpdate(Math.random() * (360 - 0) - 180);
-        rangeInput = (Math.floor(Math.random() * 360) - 180);
+        rangeInput.value = (Math.floor(Math.random() * 360) - 180);
     });
 })();
