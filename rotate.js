@@ -9,9 +9,10 @@
 
     function wheelUpdate(wheelInput) {
         document.getElementById("range-value").innerText = wheelInput; //Update the visual value
-        document.getElementById("wheel").style.transform = `rotate(${wheelInput}deg)`;
+        document.getElementById("wheel").style.transform = "rotate(" + wheelInput + "deg)";
     }
     document.getElementById("feeling-lucky").addEventListener("click", function() {
-        wheelUpdate(Math.random() * (360 - 0) - 180);
+        //wheelUpdate(Math.random() * (360 - 0) - 180);
+        rangeInput = (Math.floor(Math.random() * 360) - 180);
     });
 })();
