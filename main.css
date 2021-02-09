@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 /*Copied Boostrap classes*/
 
 * {
@@ -29,7 +31,7 @@ html {
 
 body{
     overflow:hidden;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     margin:0;
@@ -99,3 +101,4 @@ input::-moz-range-thumb {
   background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
