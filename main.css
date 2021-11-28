@@ -45,6 +45,7 @@ body{
 #wrapper{
     height:15vh;
     padding:20px;
+    overflow:hidden;
 }
 
 #feeling-lucky{
